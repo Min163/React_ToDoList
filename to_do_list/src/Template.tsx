@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import  { Todo } from './Types';
 import styles from './Component.module.css';
 import Head from './containers/Head';
-import List from './List';
+import List from './containers/List';
 import CreateItem from './containers/CreateItem';
 
 function Template()
