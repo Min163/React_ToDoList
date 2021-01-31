@@ -16,32 +16,6 @@
     flex-direction: column;
 }
 
-/* Head Component CSS */
-.HeadDiv {
-    padding-top: 48px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 24px;
-}
-.HeadDiv h1 {
-    margin: 0;
-    font-size: 36px;
-    color : white;
-}
-
-.day {
-    margin-top: 4px;
-    color : white;
-    font-size: 21px;
-}
-
-.lefts {
-    color : white;
-    font-size: 18px;
-    margin-top: 40px;
-    font-weight: bold;
-}
-
 /* List Component CSS */
 .ListDiv {
     flex: 1;

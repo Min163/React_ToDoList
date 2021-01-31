@@ -65,15 +65,12 @@ function Template()
 
     const doneItem = (id : number, done : boolean) => 
     {
-        //console.log(id);
         setTodos(
             todos.map(todo => 
                 todo.id === id ? {...todo, done : !done} : todo
             )
         );
-
-        //console.log(done);
-
+        
         if (done) 
         {
             setFinish(finish => finish - 1);
@@ -86,7 +83,6 @@ function Template()
 
     const removeItem = (id : number, done : boolean) =>
     {
-        //console.log(id);
         setTodos(
             todos.filter(todo =>
                 todo.id === id ? null : todo
