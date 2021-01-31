@@ -9,17 +9,23 @@ export type HeadProps = {
     finish : number;
 }
 
-export type CreateStyle = {
-    open : boolean;
-    classname : string;
-}
-
-export type CreateProps = {
-    createstyles : CreateStyle;
+export type InsertProps = {
     input : string;
     onChange(e : any) : void;
     addItem(e : any) : void;
-    onToggle(e : any) : void;
+}
+
+export type ButtonProps = {
+    open : boolean;
+    onToggle() : void;
+}
+
+export type CreateProps = {
+    open : boolean;
+    input : string;
+    onChange(e : any) : void;
+    addItem(e : any) : void;
+    onToggle() : void;
 }
 
 export type ItemProps = {

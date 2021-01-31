@@ -1,9 +1,9 @@
 import React, { useState, useRef } from 'react';
-import  {Todo, CreateStyle } from './Types';
+import  { Todo } from './Types';
 import styles from './Component.module.css';
 import Head from './containers/Head';
 import List from './List';
-import Create from './Create';
+import CreateItem from './containers/CreateItem';
 
 function Template()
 {
@@ -11,21 +11,12 @@ function Template()
     const [total, setTotal] = useState<number>(0);
     const [finish, setFinish] = useState<number>(0);
     const [input, setInput] = useState<string>('');
-    const [createstyles, setCreateProps] = useState<CreateStyle>({
-        open : false,
-        classname : 'CircleButton',
-    });
+    const [open, setOpen] = useState<boolean>(false);
     const nextId = useRef(0); 
     
-    const onToggle = (createstyles : CreateStyle) =>
+    const onToggle = () =>
     {
-        setCreateProps(
-            {
-                ...createstyles,
-                ['open'] : !createstyles.open,
-                ['classname'] : createstyles.open ? 'CircleButton' : 'OpenCircleButton'
-            }
-        );
+        setOpen(open => !open);
     }
 
     const onChange = (e : any) =>
@@ -49,13 +40,7 @@ function Template()
             );
 
             setInput(input => '');
-            setCreateProps(
-                {
-                    ...createstyles,
-                    ['open'] : false,
-                    ['classname'] : 'CircleButton'
-                }
-            )
+            setOpen(open => !open);
 
             nextId.current += 1;
 
@@ -101,7 +86,7 @@ function Template()
         <div className={`${styles.TemplateDiv}`}>
             <Head total={total} finish={finish} />
             <List todos={todos} doneItem={doneItem} removeItem={removeItem}/>
-            <Create createstyles={createstyles} input={input} onChange={onChange} addItem={addItem} onToggle={onToggle}/>
+            <CreateItem open={open} input={input} onChange={onChange} addItem={addItem} onToggle={onToggle}/>
         </div>
     );
 }
