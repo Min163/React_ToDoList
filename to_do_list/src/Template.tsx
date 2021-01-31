@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import  {Todo, CreateStyle } from './Types';
 import styles from './Component.module.css';
-import Head from './Head';
+import Head from './containers/Head';
 import List from './List';
 import Create from './Create';
 
@@ -70,7 +70,7 @@ function Template()
                 todo.id === id ? {...todo, done : !done} : todo
             )
         );
-        
+
         if (done) 
         {
             setFinish(finish => finish - 1);
