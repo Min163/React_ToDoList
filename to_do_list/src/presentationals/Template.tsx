@@ -1,9 +1,9 @@
 import React, { useState, useRef } from 'react';
-import  { Todo } from './Types';
-import styles from './Component.module.css';
-import Head from './containers/Head';
-import List from './containers/List';
-import CreateItem from './containers/CreateItem';
+import  { Todo } from '../Types';
+import { TemplateStyle } from '../layouts/TemplateStyle';
+import Head from '../containers/Head';
+import List from '../containers/List';
+import CreateItem from '../containers/CreateItem';
 
 function Template()
 {
@@ -35,7 +35,6 @@ function Template()
             }
 
             setTodos(
-                //todos.concat(todo)
                 [...todos, todo]
             );
 
@@ -83,11 +82,11 @@ function Template()
     }
 
     return (
-        <div className={`${styles.TemplateDiv}`}>
+        <TemplateStyle>
             <Head total={total} finish={finish} />
             <List todos={todos} doneItem={doneItem} removeItem={removeItem}/>
             <CreateItem open={open} input={input} onChange={onChange} addItem={addItem} onToggle={onToggle}/>
-        </div>
+        </TemplateStyle>
     );
 }
 
