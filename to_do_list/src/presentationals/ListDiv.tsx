@@ -1,5 +1,5 @@
 import React from 'react';
-import { ListProps } from '../Types';
+import { ListProps } from '../modules/Types';
 import { ListStyle } from '../layouts/ListStyle';
 import { ItemDiv } from '../presentationals/ItemDiv';
 

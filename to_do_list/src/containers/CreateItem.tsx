@@ -1,5 +1,5 @@
 import React from 'react';
-import { CreateProps } from '../Types';
+import { CreateProps } from '../modules/Types';
 import { InsertFormDiv } from '../presentationals/InsertFormDiv';
 import { AddButton } from '../presentationals/AddButton';
 

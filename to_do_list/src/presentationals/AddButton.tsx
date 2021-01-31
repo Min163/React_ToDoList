@@ -1,5 +1,5 @@
 import React from 'react';
-import { ButtonProps } from '../Types';
+import { ButtonProps } from '../modules/Types';
 import { DefaultButton, OpenButton } from '../layouts/AddButtonStyle';
 import { MdAdd } from 'react-icons/md';
 

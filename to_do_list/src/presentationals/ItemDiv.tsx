@@ -1,5 +1,5 @@
 import React from 'react';
-import { ItemProps } from '../Types';
+import { ItemProps } from '../modules/Types';
 import { ItemStyle, DoneCircle, UnDoneCircle, DoneTextDiv, UnDoneTextDiv, RemoveIcon } from '../layouts/ItemStyle';
 import { MdDone, MdDelete } from 'react-icons/md'
 

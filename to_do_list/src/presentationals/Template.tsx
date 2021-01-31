@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import  { Todo } from '../Types';
+import  { Todo } from '../modules/Types';
 import { TemplateStyle } from '../layouts/TemplateStyle';
 import Head from '../containers/Head';
 import List from '../containers/List';

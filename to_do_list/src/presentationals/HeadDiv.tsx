@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeadProps } from '../Types';
+import { HeadProps } from '../modules/Types';
 import { HeadStyle, DayStyle, LeftStyle } from '../layouts/HeadStyle';
 
 const HeadDiv = ({total, finish} : HeadProps): any => {

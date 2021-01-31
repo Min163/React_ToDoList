@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeadProps } from '../Types';
+import { HeadProps } from '../modules/Types';
 import { HeadDiv } from '../presentationals/HeadDiv';
 
 const Head = ({total, finish} : HeadProps) => {

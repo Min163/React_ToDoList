@@ -1,5 +1,5 @@
 import React from 'react';
-import { InsertProps } from '../Types';
+import { InsertProps } from '../modules/Types';
 import { InsertFormPositioner, InsertForm, InputStyle } from '../layouts/InsertFormStyle';
 
 const InsertFormDiv = ({ input, onChange, addItem } : InsertProps) => {
